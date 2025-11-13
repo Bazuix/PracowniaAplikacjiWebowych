@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><h1>Kontakt</h1></header>
+<nav>
+    <a href="/">Strona główna</a>
+    <a href="/o-nas">O nas</a>
+    <a href="/oferta">Oferta</a>
+    <a href="/kontakt">Kontakt</a>
+</nav>
+<main>
+    <form action="/kontakt" method="POST">
+        <label>Imię: <input type="text" name="name" required></label><br>
+        <label>Nazwisko: <input type="text" name="lastname" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Treść wiadomości:</label><br>
+        <textarea name="message" rows="5" required></textarea><br>
+        <button type="submit">Wyślij</button>
+    </form>
+
+</main>
+<footer>
+    <p>Bazuix</p>
+</footer>
+</body>
+</html>
