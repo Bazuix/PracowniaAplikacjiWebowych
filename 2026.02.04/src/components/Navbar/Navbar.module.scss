@@ -1,0 +1,25 @@
+.Navbar {
+  &Holder {
+    width: 100%;
+    display: flex;
+    background-color: #ff69b4;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 2.4rem;
+
+    &Link {
+      text-decoration: none;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: darken(#ff69b4, 40);
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+
+.Post {
+  width: 80%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &Loading,
+  &Error {
+    font-size: 4rem;
+    color: #ff69b4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &Title {
+    text-transform: uppercase;
+    color: #ff69b4;
+    font-size: 3rem;
+  }
+
+  &Body {
+    font-size: 1.8rem;
+    color: darken(#fff, 80);
+    line-height: 1.6;
+  }
+
+  &Author {
+    font-size: 1.6rem;
+    background-color: #f8f8f8;
+    border: 0.1rem solid #ff69b4;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    width: fit-content;
+  }
+
+  &Comments {
+    margin-top: 3rem;
+
+    h3 {
+      color: #ff69b4;
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &Comment {
+    border: 0.1rem solid #ff69b4;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background-color: #f8f8f8;
+    margin-bottom: 1.5rem;
+
+    h5 {
+      color: #ff69b4;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: darken(#fff, 80);
+    }
+
+    small {
+      font-size: 1.2rem;
+      color: gray;
+    }
+  }
+}
+
